@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 .logo {
-    background: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.558)), url(../image/fondo.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.558)), url(../Image/fondo.jpg);
     background-attachment: fixed;
     height: 100vh;
     width: 100%;
