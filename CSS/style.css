@@ -603,24 +603,24 @@ filter: drop-shadow(7px 7px 10px black);
 /*COMENTANOS*/
 
 @media (min-width:50px) and (max-width:650px) {
-    #comentarios {
-        padding-right: 0;
-        padding-left: 2vh;
+    #comentarios .comentarios__qs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #comentarios .comentarios__qs h1 {
+        font-size: 6vh;
     }
     #comentarios .comentarios__contenido h4 {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 3vh;
         font-size: 3vh;
-        filter: drop-shadow(3PX 3PX 5PX BLACK);
-    }
-    #comentarios .comentarios__contenido input {
-        filter: drop-shadow(3PX 3PX 5PX BLACK);
-        border-radius: 4%;
-        font-size: 2vh;
     }
     #comentarios .comentarios__contenido textarea {
-        width: 80%;
+        width: 35vh;
+        display: grid;
+        align-items: center;
+        margin-bottom: 3vh;
+    }
+    #comentarios .comentarios__contenido input {
+        font-size: 2vh;
     }
     
 }
