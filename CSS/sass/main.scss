@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+ .btn2 {
+    display: none;
+    visibility: hidden;
+ }
+ .material-symbols-outlined {
+    position: fixed;
+    bottom: 11vh;
+    right: 0;
+    z-index: 5000;
+    margin: 5vh;
+    color: white;
+    background-color: rgb(14, 14, 14);
+    padding: 0.65vh;
+    border-radius: 23%;
+    filter: drop-shadow(2px 2px 3px rgb(0, 0, 0));
+    &:hover {
+        filter: drop-shadow(2px 2px 3px rgb(255, 0, 102));
+        transition: 0.35s;
+    }
+ }
+ html {
+    scroll-behavior: smooth;
+}
+body::-webkit-search-decoration {
+    background-color: black;
+}
+body::-webkit-scrollbar {
+    width: 2vh;
+    background-color: black;
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(125, 0, 139), rgba(138, 5, 87, 0.895)), rgba(0, 0, 0, 0.605);
+    border-radius: 3%;
+}
+@import 'header';
+@import 'inicio';
+@import 'footer';

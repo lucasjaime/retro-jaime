@@ -1,0 +1,26 @@
+/*FOOTER*/
+$text-color:rgb(201, 201, 201);
+#contacto {
+    background-color: rgba(0, 0, 0, 0.278);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vh;
+    padding: 1vh 4vh;
+    color:  $text-color;
+    bottom: 0;
+    & .contacto__titulo {
+        font-size: 21.5px;
+    }
+    & .contacto__redes {
+        ul {
+           list-style: none; 
+           a {
+            text-decoration: none;
+            color: $text-color;
+            :hover {
+                color: white;
+            }
+           }
+        }
+    }
+}
