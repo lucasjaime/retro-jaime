@@ -27,7 +27,7 @@
     height: 10vh;
     padding: 15px 80px;
     background-color: rgba(0, 0, 0, 0.278);
-    & .header_menu1 {
+    & .header__menu1 {
         display: flex;
         justify-content: start;
         ul {
@@ -84,7 +84,7 @@
             }
         }
     }
-    & .header_menu1 {
+    & .header__menu1 {
         display: flex;
         justify-content: start;
         ul {

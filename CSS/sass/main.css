@@ -75,18 +75,18 @@ body::-webkit-scrollbar-thumb {
   padding: 15px 80px;
   background-color: rgba(0, 0, 0, 0.278);
 }
-#header .header_menu1 {
+#header .header__menu1 {
   display: flex;
   justify-content: start;
 }
-#header .header_menu1 ul {
+#header .header__menu1 ul {
   list-style: none;
 }
-#header .header_menu1 ul a {
+#header .header__menu1 ul a {
   text-decoration: none;
   color: rgb(201, 201, 201);
 }
-#header .header_menu1 ul a :hover {
+#header .header__menu1 ul a :hover {
   color: white;
 }
 #header .header__menu2 {
@@ -129,18 +129,18 @@ body::-webkit-scrollbar-thumb {
 #header0 .header__name0 img :hover {
   filter: drop-shadow(3px 3px 5px white);
 }
-#header0 .header_menu1 {
+#header0 .header__menu1 {
   display: flex;
   justify-content: start;
 }
-#header0 .header_menu1 ul {
+#header0 .header__menu1 ul {
   list-style: none;
 }
-#header0 .header_menu1 ul a {
+#header0 .header__menu1 ul a {
   text-decoration: none;
   color: rgb(201, 201, 201);
 }
-#header0 .header_menu1 ul a :hover {
+#header0 .header__menu1 ul a :hover {
   color: white;
 }
 #header0 .header__menu2 {
