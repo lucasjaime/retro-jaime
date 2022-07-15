@@ -15,12 +15,12 @@ $transition-img: all 0.4s;
             height: 35vh;
             padding-top: 20vh;
             transition: 0.5s;
+        }
             :hover {
                 filter: drop-shadow(7px 7px 10px white);
                 transition: 0.5s;
             }
         }
-    }
     & .main__wave{
         bottom: 0;
         width: 100%;
@@ -45,13 +45,14 @@ $transition-img: all 0.4s;
                     height: $height-img;
                     border-radius: $border-radius-img;
                     transition:$transition-img;
+                }
                     :hover{
                         filter: drop-shadow(7px 7px 10px rgb(255, 0, 102));
                         transform: scale(1.1);
                     }
-                }
             }
         }
+        
         & .menu__bebida {
             display: flex;
             justify-content: end;
@@ -61,11 +62,11 @@ $transition-img: all 0.4s;
                     height: $height-img;
                     border-radius: $border-radius-img;
                     transition: $transition-img;
+                }
                     :hover{
                         filter: drop-shadow(7px 7px 10px rgb(255, 0, 102));
                         transform: scale(1.1);
                 }
                 }
             }
-        }
 }

@@ -10,6 +10,7 @@ $text-color:rgb(201, 201, 201);
     bottom: 0;
     & .contacto__titulo {
         font-size: 21.5px;
+        cursor: default;
     }
     & .contacto__redes {
         ul {
@@ -17,10 +18,10 @@ $text-color:rgb(201, 201, 201);
            a {
             text-decoration: none;
             color: $text-color;
+           }
             :hover {
                 color: white;
             }
            }
         }
-    }
 }

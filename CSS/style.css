@@ -31,12 +31,12 @@ body::-webkit-search-decoration {
     background-color: black;
 }
 body::-webkit-scrollbar {
-    width: 2vh;
+    width: 1vh;
     background-color: black;
 }
 body::-webkit-scrollbar-thumb {
     background: linear-gradient(rgb(125, 0, 139), rgba(138, 5, 87, 0.895)), rgba(0, 0, 0, 0.605);
-    border-radius: 3%;
+    border-radius: 10%;
 }
 /*HEADER*/
 .logo {
@@ -228,6 +228,7 @@ filter: drop-shadow(7px 7px 10px black);
     padding: 1vh 4vh;
     color:  rgb(201, 201, 201);
     bottom: 0;
+    cursor: default;
 }
 #contacto .contacto__titulo{
     font-size: 21.5px;
@@ -441,6 +442,7 @@ filter: drop-shadow(7px 7px 10px black);
     justify-content: center;
     align-items: center;
     gap: 8vh;
+    cursor: default;
 }
 #comentarios .comentarios__qs {
     display: flex;
@@ -473,6 +475,9 @@ filter: drop-shadow(7px 7px 10px black);
     border-radius: 2%;
     filter: drop-shadow(3PX 3PX 5PX BLACK);
 }
+#comentarios .comentarios__contenido textarea::placeholder{
+    font-size: 3vh;
+}
 #comentarios .comentarios__contenido input {
     padding: 2.5vh;
     border-radius: 40%;
@@ -481,7 +486,11 @@ filter: drop-shadow(7px 7px 10px black);
     color: rgba(255, 255, 255, 0.849);
     font-size: 2.5vh;
     filter: drop-shadow(2px 2px 4px black);
-    
+    cursor:pointer;
+    transition: 0.4s;
+}
+#comentarios .comentarios__contenido input:hover {
+    transform: scale(1.1);
 }
 #comentarios .comentarios__form {
     display: flex;

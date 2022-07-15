@@ -31,12 +31,12 @@ body::-webkit-search-decoration {
     background-color: black;
 }
 body::-webkit-scrollbar {
-    width: 2vh;
+    width: 1vh;
     background-color: black;
 }
 body::-webkit-scrollbar-thumb {
     background: linear-gradient(rgb(125, 0, 139), rgba(138, 5, 87, 0.895)), rgba(0, 0, 0, 0.605);
-    border-radius: 3%;
+    border-radius: 10%;
 }
 @import 'header';
 @import 'inicio';

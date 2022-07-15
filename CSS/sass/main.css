@@ -37,13 +37,13 @@ body::-webkit-search-decoration {
 }
 
 body::-webkit-scrollbar {
-  width: 2vh;
+  width: 1vh;
   background-color: black;
 }
 
 body::-webkit-scrollbar-thumb {
   background: linear-gradient(rgb(125, 0, 139), rgba(138, 5, 87, 0.895)), rgba(0, 0, 0, 0.605);
-  border-radius: 3%;
+  border-radius: 10%;
 }
 
 /*HEADER*/
@@ -74,6 +74,9 @@ body::-webkit-scrollbar-thumb {
   height: 10vh;
   padding: 15px 80px;
   background-color: rgba(0, 0, 0, 0.278);
+}
+#header :hover {
+  background-color: rgb(0, 0, 0);
 }
 #header .header__menu1 {
   display: flex;
@@ -173,7 +176,7 @@ body::-webkit-scrollbar-thumb {
   padding-top: 20vh;
   transition: 0.5s;
 }
-#main .main__logo img :hover {
+#main .main__logo :hover {
   filter: drop-shadow(7px 7px 10px white);
   transition: 0.5s;
 }
@@ -204,7 +207,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5%;
   transition: all 0.4s;
 }
-#menu .menu__comida a img :hover {
+#menu .menu__comida a :hover {
   filter: drop-shadow(7px 7px 10px rgb(255, 0, 102));
   transform: scale(1.1);
 }
@@ -218,7 +221,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5%;
   transition: all 0.4s;
 }
-#menu .menu__bebida a img :hover {
+#menu .menu__bebida a :hover {
   filter: drop-shadow(7px 7px 10px rgb(255, 0, 102));
   transform: scale(1.1);
 }
@@ -235,6 +238,7 @@ body::-webkit-scrollbar-thumb {
 }
 #contacto .contacto__titulo {
   font-size: 21.5px;
+  cursor: default;
 }
 #contacto .contacto__redes ul {
   list-style: none;
@@ -243,6 +247,6 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   color: rgb(201, 201, 201);
 }
-#contacto .contacto__redes ul a :hover {
+#contacto .contacto__redes ul :hover {
   color: white;
 }/*# sourceMappingURL=main.css.map */

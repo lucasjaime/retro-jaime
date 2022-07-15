@@ -20,6 +20,9 @@
     display: none;
 }
 #header {
+    :hover{
+        background-color:rgb(0, 0, 0);
+    }
     display: grid;
     grid-template-areas: 
     "Menu RETRODRINK Ubicación"
@@ -27,6 +30,7 @@
     height: 10vh;
     padding: 15px 80px;
     background-color: rgba(0, 0, 0, 0.278);
+
     & .header__menu1 {
         display: flex;
         justify-content: start;
