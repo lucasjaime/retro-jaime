@@ -1,0 +1,219 @@
+/*HEADER*/
+@media (max-width: 640px) {
+    .material-symbols-outlined {
+        display: none;
+        visibility: hidden;
+    }
+    .btn2 {
+        display: flex;
+        visibility: visible;
+        position: fixed;
+        bottom: 11vh;
+        right: 0;
+        z-index: 5000;
+        margin: 5vh;
+        color: map-get($colores , headerHover );
+        background-color: rgb(14, 14, 14);
+        padding: 0.65vh;
+        border-radius: 23%;
+        filter: drop-shadow(2px 2px 3px rgb(0, 0, 0));
+    }
+    #headerOP {
+        visibility: visible;
+        display: grid;
+        grid-template-rows: $grid1;
+        height: 10vh;
+        padding: 1vh;
+        background-color: rgba(0, 0, 0, 0.422);
+        gap: 1vh;
+        & .header__nameOP {
+            h1 {
+                @include d-flexC;
+                font-size: 4vh;
+                a {
+                    text-decoration: none;
+                    color:map-get($colores, header);
+                }
+                a:hover {
+                    color:map-get($colores , headerHover) ;
+                }
+            }
+        }
+        & .header__menuOP{
+            ul {
+                @include d-flexC;
+                gap: 3vh;
+                list-style: none;
+                font-size: small;
+                a {
+                    text-decoration: none;
+                    color: map-get($colores, header );
+                }
+                a:hover {
+                    color: map-get($colores, headerHover );
+                }
+            }
+        }
+    }
+    #hedaerOP0 {
+        visibility: visible;
+        display: grid;
+        grid-template-rows: $grid1;
+        height: 10vh;
+        padding: 1vh;
+        background-color: rgba(0, 0, 0, 0.422);
+        gap: 1vh;
+        & .header__name {
+            @include d-flexC;
+            img {
+                height: 10vh;
+                transition: 0.28s; 
+            }
+            img:hover {
+                filter: drop-shadow(3px 3px 5px white); 
+            }
+        }
+        & .header__menu {
+            ul {
+                @include d-flexC;
+                gap: 3vh;
+                list-style: none;
+                font-size: small;
+                a {
+                    text-decoration: none;
+                    color: map-get($colores , header );
+                }
+                a:hover {
+                    color: map-get($colores , headerHover );
+                }
+            }
+        }
+    }
+    #header {
+        visibility: hidden;
+        display: none;
+    }
+    #header0 {
+        visibility: hidden;
+        display: none;
+    }
+}
+/*INICIO*/
+@media (min-width:200px) and (max-width:1440px) {
+    #menu {
+        grid-template-columns: $grid1;
+        gap: 7vh;
+        padding: 7vh 0;
+        & .menu__bebida {
+            @include d-flexC;
+            a img {
+                height: 65vh
+            }
+        }
+        & .menu__comida {
+            @include d-flexC;
+            a img {
+                height: 58vh;
+            }
+        }
+    }
+}
+/*BEBIDA*/
+@media (min-width:850px) and (max-width: 950px) {
+    #bebida {
+        display: grid;
+        grid-template-columns: $grid2;
+    }
+}
+@media (min-width: 200px) and (max-width:849px) {
+    #bebida {
+        display: grid;
+        grid-template-columns: $grid1;
+        padding: 7vh 0;
+        .grid {
+            @include d-flexC;
+            img {
+                height: 85%;
+            }
+        }
+    }
+}
+/*COMIDA*/
+
+@media (min-width:641px) and (max-width:1150px) {
+    #comida {
+        display: grid;
+        grid-template-columns: $grid1;
+        padding: 7vh 0;
+        .grid {
+            @include d-flexC;
+        }
+    }
+}
+/*UBICACIÓN*/
+@media (min-width:200px) and (max-width:659px) {
+    #ubicacion {
+        display: grid;
+        grid-template-columns: $grid1;
+        padding: 20vh 0;
+        gap: 10vh;
+        & .ubicacion__caballito {
+            @include d-flexC;
+            h4 {
+                font-size: 3vh;
+            }
+            .ubicacion__p {
+                font-size: 2.5vh;
+            }
+            img {
+                height: 25vh; 
+            }
+        }
+        & .ubicacion__recoleta {
+            @include d-flexC;
+            h4 {
+                font-size: 3vh;
+            }
+            .ubicacion__p {
+                font-size: 2.5vh;
+            }
+            img {
+                height: 25vh;
+            }
+        }
+    }
+    #comentarios{
+        & .comentarios__qs {
+            display: grid;
+            grid-template-columns: $grid1;
+            h1 {
+                font-size: 6vh;
+            }
+        }
+        & .comentarios__contenido {
+            h4 {
+                font-size: 3vh;
+            }
+            textarea {
+                width: 35vh;
+                display: grid;
+                align-items: center;
+                margin-bottom: 3vh;
+            }
+            input {
+                font-size: 2vh;
+            }
+        }
+    }
+    #comida {
+        display: grid;
+        grid-template-columns: $grid1;
+        padding: 10vh 0;
+        & .grid {
+            @include d-flexC;
+            img {
+                height: 70vh;
+            }
+        }
+    }
+}

@@ -20,9 +20,6 @@
     display: none;
 }
 #header {
-    :hover{
-        background-color:rgb(0, 0, 0);
-    }
     display: grid;
     grid-template-areas: 
     "Menu RETRODRINK Ubicación"
@@ -38,9 +35,9 @@
             list-style: none;
             a{
                 text-decoration: none;
-                color: rgb(201, 201, 201);
+                color: map-get($colores , header );
                 :hover {
-                    color: white;   
+                    color:map-get($colores , headerHover );   
                 }  
             }
         }
@@ -52,9 +49,9 @@
             list-style: none;
             a{
                 text-decoration: none;
-                color: rgb(201, 201, 201);
+                color: map-get($colores , header );
                     :hover{
-                        color: white;
+                        color: map-get($colores , headerHover );
                     }
             }
         }
@@ -64,9 +61,9 @@
         justify-content: center;
         a {
             text-decoration: none;
-            color: rgb(201, 201, 201); 
+            color: map-get($colores , header ); 
             :hover{
-                color: white;
+                color: map-get($colores , headerHover );
             }
         }
     }
@@ -78,16 +75,18 @@
     "Contacto Logo Comentanos";
     height: 10vh;
     padding: 15px 80px;
-    background-color: rgba(0, 0, 0, 0.278);
+    background-color: map-get($colores , bgHeader );
     & .header__name0 {
+        display: flex;
+        @include d-flexC;
         img {
             height: 10vh;
             transition: 0.28s;
-            :hover {
-                filter: drop-shadow(3px 3px 5px white);
-            }
         }
-    }
+        :hover {
+            filter: drop-shadow(3px 3px 5px white);
+        }
+        }
     & .header__menu1 {
         display: flex;
         justify-content: start;
@@ -95,9 +94,9 @@
             list-style: none;
             a{
                 text-decoration: none;
-                color: rgb(201, 201, 201);
+                color: map-get($colores , header );
                 :hover {
-                    color: white;
+                    color: map-get($colores , headerHover );
                 }   
             }
         }
@@ -107,13 +106,13 @@
         justify-content: end;
         ul {
             list-style: none;
-            a {
+            a{
                 text-decoration: none;
-                color: rgb(201, 201, 201);
-                :hover{
-                    color: white;
-                }
+                color: map-get($colores , header );
+            }
+            :hover{
+                color: map-get($colores , headerHover );
+            }
             }
         }
     }
-}

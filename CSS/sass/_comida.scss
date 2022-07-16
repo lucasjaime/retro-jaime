@@ -1,0 +1,25 @@
+#comida {
+    display: grid;
+    grid-template-columns: $grid2;
+    background: $fondo;
+    gap: 50px;
+    padding: 17vh 25vh;
+    & .grid {
+        @include d-flexC;
+        width: 100%;
+        img {
+            filter: drop-shadow(6px 6px 10px black);
+            border-radius: 5%;
+        }
+    }
+    &.comida__logo {
+        height: 48vh;
+        margin: 10px;
+    img {
+        transition: all 0.4s;
+    }
+    :hover {
+        filter: drop-shadow(10px 10px 20px white);
+    }
+    }
+}

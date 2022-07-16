@@ -1,0 +1,62 @@
+$filter-shadow-comentarios:drop-shadow(3PX 3PX 5PX BLACK);
+#comentarios {
+    color: map-get($colores , header );
+    padding: 15vh;
+    display: grid;
+    grid-template-columns: $grid1;
+    justify-content: center;
+    align-items: center;
+    gap: 8vh;
+    cursor: default;
+    & .comentarios__qs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5vh;
+        background-color: rgba(104, 1, 78, 0.451);
+        border-radius: 3.5%;
+        padding: 4vh;
+        filter: drop-shadow(10px 10px 15px black);
+        h1 {
+            font-size: 10vh;
+        }
+        p {
+            width: 70%;
+        }
+    }
+    & .comentarios__contenido {
+        @include d-flexC;
+        h4 {
+            @include d-flexC;
+            padding-bottom: 5vh;
+            font-size: 5vh;
+            filter: drop-shadow(3PX 3PX 5PX BLACK); 
+        }
+        textarea {
+            border-radius: 2%;
+            filter: $filter-shadow-comentarios;
+        }
+        ::placeholder {
+            font-size: 3vh;
+        }
+        input {
+            padding: 2.5vh;
+            border-radius: 40%;
+            border: none;
+            background-color: rgba(60, 0, 31, 0.752);
+            color: rgba(255, 255, 255, 0.849);
+            font-size: 2.5vh;
+            filter: drop-shadow(2px 2px 4px black);
+            cursor:pointer;
+            transition: 0.4s;}
+        input:hover {
+            transform: scale(1.1);
+        }
+    }
+    & .comentarios__form {
+        @include d-flexC;    
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5vh;
+    }
+} 

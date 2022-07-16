@@ -1,0 +1,28 @@
+.fondo {
+    background: $fondo;
+}
+#bebida {
+    display: grid;
+    grid-template-columns: $grid3;
+    gap: 6vh;
+    padding: 17vh;
+    & .grid {
+        @include d-flexC;
+        width: 100%;
+        img {
+            filter: drop-shadow(4px 4px 7px black);
+            border-radius: 7%;
+            height: 80vh;
+        }
+    }
+    & .logoBebida {
+        margin: 10px;
+        img {
+            transition: all 0.4s;
+            height: 20vh;
+        }
+        :hover {
+            filter: drop-shadow(10px 10px 20px white);
+        }
+    }
+}

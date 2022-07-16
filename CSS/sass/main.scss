@@ -38,6 +38,25 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(rgb(125, 0, 139), rgba(138, 5, 87, 0.895)), rgba(0, 0, 0, 0.605);
     border-radius: 10%;
 }
+@mixin d-flexC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+$colores: (
+    header: rgb(201, 201, 201),
+    headerHover:white,
+    bgHeader:rgba(0, 0, 0, 0.278),
+);
+$grid3: repeat(3, 1fr);
+$grid2: repeat(2, 1fr);
+$grid1: repeat(1, 1fr);
+$fondo: linear-gradient(rgb(0, 0, 0), rgb(170, 14, 110)), rgba(128, 128, 128, 0.705);
 @import 'header';
 @import 'inicio';
 @import 'footer';
+@import 'bebida';
+@import 'comida';
+@import 'ubicacion';
+@import 'comentarios';
+@import 'mediaQuery';
