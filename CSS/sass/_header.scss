@@ -1,3 +1,105 @@
+    /*HEADER*/
+    @media (max-width: 640px) {
+        .material-symbols-outlined {
+            display: none;
+            visibility: hidden;
+        }
+        .btn2 {
+            display: flex;
+            visibility: visible;
+            position: fixed;
+            bottom: 11vh;
+            right: 0;
+            z-index: 5000;
+            margin: 5vh;
+            color: map-get($colores , headerHover );
+            background-color: rgb(14, 14, 14);
+            padding: 0.65vh;
+            border-radius: 23%;
+            filter: drop-shadow(2px 2px 3px rgb(0, 0, 0));
+        }
+        #headerOP {
+            visibility: visible;
+            display: grid;
+            grid-template-rows: $grid1;
+            height: 10vh;
+            padding: 1vh;
+            background-color: rgba(0, 0, 0, 0.422);
+            gap: 1vh;
+            & .header__nameOP {
+                h1 {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 4vh;
+                    a {
+                        text-decoration: none;
+                        color:map-get($colores, header);
+                    }
+                    a:hover {
+                        color:map-get($colores , headerHover) ;
+                    }
+                }
+            }
+            & .header__menuOP{
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    gap: 3vh;
+                    list-style: none;
+                    font-size: small;
+                    a {
+                        text-decoration: none;
+                        color: map-get($colores, header );
+                    }
+                    a:hover {
+                        color: map-get($colores, headerHover );
+                    }
+                }
+            }
+        }
+        #hedaerOP0 {
+            visibility: visible;
+            display: grid;
+            grid-template-rows: $grid1;
+            height: 10vh;
+            padding: 1vh;
+            background-color: rgba(0, 0, 0, 0.422);
+            gap: 1vh;
+            & .header__name {
+                display: flex;
+                justify-content: center;
+                img{
+                    height: 10vh;
+                    transition: 0.28s;
+                }
+                img:hover{
+                    filter: drop-shadow(3px 3px 5px white);
+                }
+            }
+            & .header__menu ul{
+                display: flex;
+                justify-content: center;
+                gap: 3vh;
+                list-style: none;
+                font-size: small;
+                a{
+                    text-decoration: none;
+                    color: map-get($colores , header );
+                }
+                a:hover{
+                    color: map-get($colores , headerHover );
+                }
+            }
+        }
+        #header {
+            visibility: hidden;
+            display: none;
+        }
+        #header0 {
+            visibility: hidden;
+            display: none;
+        }
+    }
 /*HEADER*/
 .logo {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.57)), url(../../Image/fondo.jpg);
@@ -78,7 +180,7 @@
     background-color: map-get($colores , bgHeader );
     & .header__name0 {
         display: flex;
-        @include d-flexC;
+        justify-content: center;
         img {
             height: 10vh;
             transition: 0.28s;

@@ -65,27 +65,25 @@
         gap: 1vh;
         & .header__name {
             @include d-flexC;
-            img {
+            img{
                 height: 10vh;
-                transition: 0.28s; 
+                transition: 0.28s;
             }
-            img:hover {
-                filter: drop-shadow(3px 3px 5px white); 
+            img:hover{
+                filter: drop-shadow(3px 3px 5px white);
             }
         }
-        & .header__menu {
-            ul {
-                @include d-flexC;
-                gap: 3vh;
-                list-style: none;
-                font-size: small;
-                a {
-                    text-decoration: none;
-                    color: map-get($colores , header );
-                }
-                a:hover {
-                    color: map-get($colores , headerHover );
-                }
+        & .header__menu ul{
+            @include d-flexC;
+            gap: 3vh;
+            list-style: none;
+            font-size: small;
+            a{
+                text-decoration: none;
+                color: map-get($colores , header );
+            }
+            a:hover{
+                color: map-get($colores , headerHover );
             }
         }
     }
