@@ -184,7 +184,7 @@ body::-webkit-scrollbar-thumb {
 }
 #menu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     padding: 20vh 35vh;
@@ -584,7 +584,8 @@ filter: drop-shadow(7px 7px 10px black);
         justify-content: center;
         gap: 3vh;
         list-style: none;
-        font-size: small;}
+        font-size: small;
+    }
     #headerOP0 .header__menu ul a{
         text-decoration: none;
         color: rgb(201, 201, 201);
