@@ -253,7 +253,8 @@ filter: drop-shadow(7px 7px 10px black);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6vh;
-    padding: 17vh;
+    padding: 17vh 0;
+    margin: 0.1%;
 
 }
 #bebida .grid {
@@ -265,7 +266,7 @@ filter: drop-shadow(7px 7px 10px black);
 #bebida .grid img {
     filter: drop-shadow(4px 4px 7px black);
     border-radius: 7%;
-    height: 80vh;
+    height: 90%;
 }
 
 #bebida .logoBebida {
@@ -285,8 +286,8 @@ filter: drop-shadow(7px 7px 10px black);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: linear-gradient(rgb(0, 0, 0), rgb(170, 14, 110)), rgba(128, 128, 128, 0.705);
-    gap: 50px;
-    padding: 17vh 25vh;
+    gap: 5vh;
+    padding: 17vh 0;
 }
 #comida .grid {
     display: flex;
@@ -316,8 +317,9 @@ filter: drop-shadow(7px 7px 10px black);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: white;
-    padding: 8%;
-    gap: 5%;
+    padding: 5% 0;
+    margin: 0.1%;
+    gap: 3%;
 }
 #ubicacion .ubicacion__caballito {
     display: flex;
@@ -346,7 +348,7 @@ filter: drop-shadow(7px 7px 10px black);
 }
 
 #ubicacion .ubicacion__caballito img {
-    height: 50vh;
+    height: 40%;
     border-radius: 5%;
     filter: drop-shadow(7px 7px 10px rgb(0, 0, 0));
     margin-top: 5%;
@@ -378,7 +380,7 @@ filter: drop-shadow(7px 7px 10px black);
 }
 
 #ubicacion .ubicacion__recoleta img {
-    height: 50vh;
+    height: 40%;
     border-radius: 5%;
     filter: drop-shadow(7px 7px 10px rgb(0, 0, 0));
     margin-top: 5%;
@@ -605,7 +607,7 @@ filter: drop-shadow(7px 7px 10px black);
 
     /*INICIO*/
 
-@media (min-width:200px) and (max-width:1440px) {
+@media (min-width:200px) and (max-width:1250px) {
     #menu {
         grid-template-columns: repeat(1, 1fr);
         gap: 7vh;
@@ -629,7 +631,7 @@ filter: drop-shadow(7px 7px 10px black);
 
 /*BEBIDA*/
 
-@media (min-width:850px) and (max-width: 950px) {
+@media (min-width:850px) and (max-width: 1100px) {
     #bebida {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -666,7 +668,7 @@ filter: drop-shadow(7px 7px 10px black);
 
 /*UBICACIÓN*/
 
-@media (min-width:660px) and (max-width:950px) {
+@media (min-width:660px) and (max-width:1050px) {
     #ubicacion {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
