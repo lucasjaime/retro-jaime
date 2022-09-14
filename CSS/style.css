@@ -259,9 +259,64 @@ filter: drop-shadow(7px 7px 10px black);
 }
 #bebida .grid {
     display: flex;
+    flex-direction: column;
+    gap: 4vh;
     align-items: center;
     justify-content: center;
     width: 100%;
+
+}
+#bebida .grid button a{
+    text-decoration: none;
+    color: white;
+}
+#bebida .grid button{
+    --glow-color: rgba(199, 0, 172, 0.773);
+    --glow-spread-color: rgba(148, 8, 104, 0.514);
+    --enhanced-glow-color: rgb(133, 6, 130);
+    --btn-color: rgba(45, 0, 30, 0.653);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#bebida .grid button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+#bebida .grid button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+#bebida .grid button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
 }
 #bebida .grid img {
     filter: drop-shadow(4px 4px 7px black);
