@@ -25,20 +25,17 @@ let imgCarrito = document.getElementById('ImgCarrito')
 let bebidasMenu = fetch("../Javascript/bebidas.json")
 .then((res)=> res.json())
 .then((bebidas) => {
-    for(trago of bebidas){
+    bebidas.forEach((trago) => {
         const div = document.createElement('div')
         div.classList.add('grid')
         div.innerHTML = `<img src=${trago.img} alt="bebida">
-        <button id="agregar${trago.id}">Agregar al pedido</button>
-        `
+        <button id="agregar${trago.id}">Agregar al pedido</button>`
         contenedorProductos.appendChild(div);
-    
         let boton = document.getElementById(`agregar${trago.id}`);
-    
         boton.addEventListener('click', ()=>{
-            agregarAlCarrito(trago.id)
+            agregarAlCarrito(trago)
         })
-    }
+    })
 })
 let carrito = []
 document.addEventListener('DOMContentLoaded', ()=>{
@@ -56,7 +53,8 @@ imgCarrito.addEventListener('click',()=>{
     productosEnCarrito()
 })
 
-function agregarAlCarrito(prodId) {
+function agregarAlCarrito(producto) {
+    const prodId = producto.id;
     const existe = carrito.some(prod => prod.id === prodId)
     if (existe){
         const prod = carrito.map(prod => {
@@ -65,13 +63,7 @@ function agregarAlCarrito(prodId) {
             }
         })
     }else{
-        fetch("../Javascript/bebidas.json")
-        .then((res)=> res.json())
-        .then((bebidas)=>{
-            let item = bebidas.find((prod) => prod.id === prodId)
-            carrito.push(item)
-        })
-    
+        carrito.push(producto)
     }
     actualizarCarrito()
 }
